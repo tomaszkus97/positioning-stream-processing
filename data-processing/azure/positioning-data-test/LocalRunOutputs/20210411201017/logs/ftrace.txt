@@ -1,0 +1,318 @@
+TimeStamp,ActivityId,EventId,Level,Payload[0],Payload[1],Payload[2],Payload[3],Payload[4],Payload[5],Payload[6],Payload[7],Payload[8],Payload[9]
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNode.InitializeNode","0012","11.04.2021 18:10:23","0","Initializing Streaming node","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNodeManager.InitializeNode","0013","11.04.2021 18:10:23","0","Initializing storage infrastructure","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,2,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","","","Unable to initialize system storage container: Both connection string and SAS key are absent","RuntimeArgumentsInformation","","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,2,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","","","Use system storage for customer data persistency.","RuntimeArgumentsInformation","","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNodeManager.InitializeNode","0014","11.04.2021 18:10:23","0","Initializing remote connections","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNodeManager.CreateRemoteConnectionsManager","0015","11.04.2021 18:10:23","0","Start remote manager","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","WakeStreamingRemoteManager.Start","0016","11.04.2021 18:10:23","0","Start listening on 0.0.0.0 on port 28170 for node streamingNode0","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","WakeStreamingRemoteManager.Start","0017","11.04.2021 18:10:23","0","Registering endpoint 192.168.0.114:28170 for node streamingNode0","1.2.1105.1"
+11.04.2021 18:10:23,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","RemoteConnectionsManagerBase.EstablishNodeConnections","0018","11.04.2021 18:10:23","0","Waiting for connection initiating tasks to complete for node streamingNode0","1.2.1105.1"
+11.04.2021 18:10:23,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","RemoteConnectionsManagerBase.EstablishNodeConnections","0019","11.04.2021 18:10:23","0","Connection initiating tasks done for node streamingNode0","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNodeManager.CreateProcessorsContainer","001A","11.04.2021 18:10:23","0","Initialize processors container","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorsContainer.Initialize","001B","11.04.2021 18:10:23","0","Start initializing processor container","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","OutputProcessor..ctor","001C","11.04.2021 18:10:23","0","Create OutputProcessor","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessBatchExecutor..ctor","001D","11.04.2021 18:10:23","0","Create OutputProcessor ProcessBatchExecutor","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorsContainer.Initialize","001E","11.04.2021 18:10:23","0","Setting up node topology context using local config.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","FasterRefDataConfig..cctor","001F","11.04.2021 18:10:23","0","FasterRefDataConfig: MemorySizeBits: 13, PageSizeBits: 9, SegmentSizeBits: 16, GuaranteedRecordsInMemory: 33, TotalRecordSlotsInMemory: 336","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","StreamingProcessor.Initialize","0020","11.04.2021 18:10:23","0","Processor outputStep#0$0 initializing.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseStreamingProcessor.Initialize","0021","11.04.2021 18:10:23","0","Processor outputStep#0$0, checkpoint name Trill0 has 1 downstream consumers.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseTrillProcessor.InitializeQueryContainer","0022","11.04.2021 18:10:23","0","Initializing Trill Query start","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseComputeContainer..ctor","0023","11.04.2021 18:10:23","0","Initializing compute container","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseQueryContainer..ctor","0024","11.04.2021 18:10:23","0","Initializing query container for query processor","1.2.1105.1"
+11.04.2021 18:10:23,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","DataErrorCollector..ctor","0025","11.04.2021 18:10:23","0","Data error collector initialized for location: outputStep with interval: 00:05:00","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseTrillProcessor.InitializeQueryContainer","0026","11.04.2021 18:10:23","0","Initializing Trill Query end","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","StreamingProcessor.Initialize","0027","11.04.2021 18:10:23","0","Processor outputStep-output#0$0 initializing.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","BaseStreamingProcessor.Initialize","0028","11.04.2021 18:10:23","0","Processor outputStep-output#0$0, checkpoint name outputStep-output#0$0 has 0 downstream consumers.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","OutputProcessor.InitializeInternal","0029","11.04.2021 18:10:23","0","Initialize Output Processor","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","BasePartitionController..ctor","002A","11.04.2021 18:10:23","0","Creating MultiAdapterPartitionController . SchemaSensitive = False NestedSchemaSensitive = False OutputStartTimeTicks = 621355968000000000 IsSubstream = False","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.positioning#0$0","StreamingProcessor.Initialize","002B","11.04.2021 18:10:23","0","Processor positioning#0$0 initializing.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.positioning#0$0","InputProcessor.InitializeAdapters","002C","11.04.2021 18:10:23","0","Initializing InputAdapters","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.positioning#0$0","RecordEventBuilder..ctor","002D","11.04.2021 18:10:23","0","Partition: 0, ProcessingState: ByArrivalTime, LateArrival: -00:00:00.0010000, EarlyArrival: 00:00:00","1.2.1105.1"
+11.04.2021 18:10:23,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.positioning#0$0","DataErrorCollector..ctor","002E","11.04.2021 18:10:23","0","Data error collector initialized for location: positioning with interval: 00:05:00","1.2.1105.1"
+11.04.2021 18:10:23,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.positioning#0$0","DataErrorCollector..ctor","002F","11.04.2021 18:10:23","0","Data error collector initialized for location: positioning with interval: 00:05:00","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","BaseMetricsPublisher.Initialize","0030","11.04.2021 18:10:23","0","PortalMetricsTracePublisher initialized","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorsContainer.Initialize","0031","11.04.2021 18:10:23","0","Done initializing processor container","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler..ctor","0032","11.04.2021 18:10:23","0","0. Number of roots: 1","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.BuildDependencies","0033","11.04.2021 18:10:23","0","0: Building dependencies.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","BasicStreamingNodeManager.InitializeNode","0034","11.04.2021 18:10:23","0","Node initialized","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNodeManager.InitializeNode","0035","11.04.2021 18:10:23","0","Start incoming traffic","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNode.StartNode","0036","11.04.2021 18:10:23","0","Starting Streaming node","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","SingleThreadedProcessorsContainer.StartProcessing","0037","11.04.2021 18:10:23","0","Starting 1 schedulers","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.Run","0038","11.04.2021 18:10:23","0","0: Starting.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.Run","0039","11.04.2021 18:10:23","0","ProcessorScheduler.Start 0: Started.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.InitializeTopology","003A","11.04.2021 18:10:23","0","0: Begin initializing topology.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","OutputProcessor.PerformAnchorRequests","003B","11.04.2021 18:10:23","0","Started with Init timestamp = 1970-01-01T00:00:00.0000000Z","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.RecordDownstreamInitializationInfo","003C003D","11.04.2021 18:10:23","0","Downstream initialization recorded for outputStep-output#0$0","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.RecordDownstreamInitializationInfo","003C003E","11.04.2021 18:10:23","0","Downstream initialization completed","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.Initializing","003C003F","11.04.2021 18:10:23","0","New consumer registered outputStep-output#0$0","1.2.1105.1"
+11.04.2021 18:10:23,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.Initializing","003C","11.04.2021 18:10:23","7","1 : Adding first anchor to upto anchors for processor outputStep-output#0$0
+3 : Adding anchor to initMap for processor outputStep-output#0$0: positioning#0$0_0 : 01/01/1970 00:00:00 == 621355968000000000
+","1.2.1105.1"
+11.04.2021 18:10:23,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetStreamingBatch","0040","11.04.2021 18:10:23","0","Processor is initializing or catching up","1.2.1105.1"
+11.04.2021 18:10:23,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.InitializeInput","0041","11.04.2021 18:10:23","0","Uninitialized streams: positioning#0$0_0.","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.FindMinimalAnchorData","0042","11.04.2021 18:10:23","0","Minimal anchor: positioning#0$0_0 : 01/01/1970 00:00:00 == 621355968000000000
+","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.InitializeStreamProcessingInternalAsync","0043","11.04.2021 18:10:23","0","Initializing without checkpoint","1.2.1105.1"
+11.04.2021 18:10:23,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseQueryContainer.InstantiateTrillQuery","0044","11.04.2021 18:10:23","0","Start instantiating trill query","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.InitializeStreamProcessingInternalAsync","0045","11.04.2021 18:10:24","0","Minimal Anchor: positioning#0$0_0 : 01/01/1970 00:00:00 == 621355968000000000
+","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.InitializeStreamProcessingInternalAsync","0046","11.04.2021 18:10:24","0","No catching up required as minimal received anchor is not following the start anchor Same","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0047","11.04.2021 18:10:24","53","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0048","11.04.2021 18:10:24","5","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"positioning#0$0","InputPartitionController.Produce","0049","11.04.2021 18:10:24","0","Partition: 0, First message ResourceId: c:\Users\tkus\Desktop\Mgr\positioning-stream-processing\data-processing\azure\positioning-data-test\Inputs\positioning-mock.json, ArrivalTime : 2021-04-11T18:10:24.1245559Z ","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.InitializeTopology","004A","11.04.2021 18:10:24","0","Populated runtime string cache with 24 values","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.InitializeTopology","004B","11.04.2021 18:10:24","0","0: End initializing topology.","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseOutputBuffer.GetBatchIdFromAnchor","004C","11.04.2021 18:10:24","0","Retrieved BatchId -1","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","OutputProcessor.GetNextBatch","004D","11.04.2021 18:10:24","0","Output got batch, MaxIncludedTimestampTicks : 0.","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.positioning#0$0","PunctuationProvider.RecordApplicationTimeProgress","004E004F","11.04.2021 18:10:24","0","Partition 0 - reached EventArrivalTimeHighWatermark: 9997-04-05T23:59:59.9999999Z EventApplicationTimeHighWatermarkTicks : 9997-04-05T23:59:59.9999999Z","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","004E","11.04.2021 18:10:24","7","1 : Get batch for stream positioning#0$0_0
+8b : Removing stream positioning#0$0_0 from marker batch input sources","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseQueryContainer.ComputeBatch","00500051","11.04.2021 18:10:24","35","Adding messages to subject","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.ProcessBatchAsync","0050","11.04.2021 18:10:24","0","Adding batch 1 of 12 messages with a total of 12 events for id 1. Increased consumed memory by 2070 to 2070","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.ProcessBatchAsync","0050","11.04.2021 18:10:24","92","streamId : positioning#0$0_0
+completeUpTo : False
+dropOutput : False
+receivedCount : 11","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.Execute","0052","11.04.2021 18:10:24","0","0: Done running processor outputStep#0$0. Duration: 103ms. Outcome is BatchGenerated = True. OutputReady = True. Next Processor = positioning#0$0","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseOutputBuffer.GetBatchIdFromAnchor","0053","11.04.2021 18:10:24","0","Retrieved BatchId 1","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseOutputBuffer.FillBatch","0054","11.04.2021 18:10:24","0","Iteration : 0
+RunId : 929fe241-6012-4db6-a208-c94e45015fb0
+BatchId : 1
+Batch : found
+Adding batch : Batch count 12, batchSize 2070","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseOutputBuffer.CleanupBuffer","00550056","11.04.2021 18:10:24","0","Is forced:False. Consumed memory 2070 out of 52600697 new min 1 using LW 1","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseOutputBuffer.FillBatch","0055","11.04.2021 18:10:24","9","Iteration : 1
+RunId : 929fe241-6012-4db6-a208-c94e45015fb0
+BatchId : 2
+Batch : not found
+Creating new anchor : Next Batch 2
+Exit : Consuming processor outputStep-output#0$0 returned 1 elements, new anchor BatchId: 2, RunId: 929fe241-6012-4db6-a208-c94e45015fb0, ShardId: 0, processed batches 1","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","OutputProcessor.GetNextBatch","0057","11.04.2021 18:10:24","0","Output got batch, MaxIncludedTimestampTicks : 3154514975999999999.","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","DataErrorCollector..ctor","00580059","11.04.2021 18:10:24","0","Data error collector initialized for location: output with interval: 00:05:00","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","BasePartitionController.ProcessBatch","0058","11.04.2021 18:10:24","31","Min Timestamp : 637537614240000000
+Max Timestamp : 3154514975999999999
+Number of time partitions : 1
+Number of schemas or adapters : 1","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.UpdateProcessingOutcome","005B","11.04.2021 18:10:24","0","Processor outputStep-output#0$0: started an ongoing operation Operation pending.","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","005C","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","005D","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","005E","11.04.2021 18:10:24","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","005F","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0060","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","0061","11.04.2021 18:10:24","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","0062","11.04.2021 18:10:24","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","MultiAdapterPartitionController.FlushAdapterAsync","0063","11.04.2021 18:10:24","0","Flushing. AdapterCount = 1","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","OutputAdapterBase.FlushAsync","00640065","11.04.2021 18:10:24","0","Wrote 10 events to the output adapter. Time Taken: 00:00:00.0022015","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0066","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0067","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","0068","11.04.2021 18:10:24","0","0: Ready queue filled with all 2 input processors.","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep-output#0$0","OutputProcessor.GetNextBatch","0069","11.04.2021 18:10:24","0","Output got batch, MaxIncludedTimestampTicks : 0.","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","006A","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","006B","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","006C","11.04.2021 18:10:24","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","006D","11.04.2021 18:10:24","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","006E","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","006F","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","0070","11.04.2021 18:10:24","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","0071","11.04.2021 18:10:24","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FlushNotGeneratingProcessors","0072","11.04.2021 18:10:24","0","Not Generating: outputStep#0$0 Had Data: False, processing time : 0 
+outputStep-output#0$0 Had Data: False, processing time : 63 
+positioning#0$0 Had Data: False, processing time : 1 ","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0073","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0074","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","0075","11.04.2021 18:10:24","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","0076","11.04.2021 18:10:24","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:24,StreamingNodeEventSource,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"4c08ed41-ec8a-4f73-88e0-abb1f1b61dd6","","","Running"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0077","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0078","11.04.2021 18:10:24","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","0079","11.04.2021 18:10:24","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","007A","11.04.2021 18:10:24","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","007B","11.04.2021 18:10:24","1","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","007C","11.04.2021 18:10:24","1","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","007D","11.04.2021 18:10:24","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:24,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","007E","11.04.2021 18:10:24","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","007F","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0080","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","0081","11.04.2021 18:10:25","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","0082","11.04.2021 18:10:25","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0083","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0084","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","0085","11.04.2021 18:10:25","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","0086","11.04.2021 18:10:25","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0087","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0088","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","0089","11.04.2021 18:10:25","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","008A","11.04.2021 18:10:25","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","008B","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","008C","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","008D","11.04.2021 18:10:25","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","008E","11.04.2021 18:10:25","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","008F","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0090","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","0091","11.04.2021 18:10:25","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","0092","11.04.2021 18:10:25","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0093","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0.outputStep#0$0","BaseEventStreamProcessor.GetNextBatch","0094","11.04.2021 18:10:25","0","1 : Get batch for stream positioning#0$0_0
+8a : Mark empty marker batch for retry, current streams with marker batches: positioning#0$0_0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.FillReadyQueue","0095","11.04.2021 18:10:25","0","0: Ready queue filled with all 1 input processors.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.ThreadProc","0096","11.04.2021 18:10:25","0","0: No progress is made. Yielding execution for 100ms","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNode.ShutdownNode","0097","11.04.2021 18:10:25","0","Starting shutdown","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","BasicStreamingNodeManager.PauseNode","0098","11.04.2021 18:10:25","0","Stopping node.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","SingleThreadedProcessorsContainer.ShutdownProcessing","0099","11.04.2021 18:10:25","0","Stopping 1 schedulers","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.Stop","009A","11.04.2021 18:10:25","0","0: ProcessorScheduler stopping.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.Stop","009B","11.04.2021 18:10:25","0","0: ProcessorScheduler stopped.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","SingleThreadedProcessorsContainer.ShutdownProcessing","009C","11.04.2021 18:10:25","0","Stopping processor positioning#0$0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingProcessor.Shutdown","009D","11.04.2021 18:10:25","0","Processor positioning#0$0 shutting down.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","SingleThreadedProcessorsContainer.ShutdownProcessing","009E","11.04.2021 18:10:25","0","Stopping processor outputStep-output#0$0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingProcessor.Shutdown","009F","11.04.2021 18:10:25","0","Processor outputStep-output#0$0 shutting down.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","SingleThreadedProcessorsContainer.ShutdownProcessing","00A0","11.04.2021 18:10:25","0","Stopping processor outputStep#0$0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingProcessor.Shutdown","00A1","11.04.2021 18:10:25","0","Processor outputStep#0$0 shutting down.","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","","","11.04.2021 18:10:25","0","Clearing output buffer","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","BasicStreamingNodeManager.PauseNode","00A2","11.04.2021 18:10:25","0","Node stopped","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNode.ShutdownNode","00A3","11.04.2021 18:10:25","0","NodeManager stopped","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNode.ShutdownNode","00A4","11.04.2021 18:10:25","0","Shutdown completed","1.2.1105.1"
+11.04.2021 18:10:25,StreamingNodeEventSource,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"4c08ed41-ec8a-4f73-88e0-abb1f1b61dd6","","","Shutdown"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNode.StartNode","00A5","11.04.2021 18:10:25","0","Exiting Streaming node","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.Stop","00A6","11.04.2021 18:10:25","0","0: ProcessorScheduler stopping.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorScheduler.Stop","00A7","11.04.2021 18:10:25","0","0: Couldn't stop ProcessorScheduler, as it wasn't running.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","SingleThreadedProcessorsContainer.Dispose","00A8","11.04.2021 18:10:25","0","Schedulers disposed.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","SingleThreadedProcessorsContainer.ShutdownProcessing","00A9","11.04.2021 18:10:25","0","Stopping 0 schedulers","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","SingleThreadedProcessorsContainer.ShutdownProcessing","00AA","11.04.2021 18:10:25","0","Stopping processor positioning#0$0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingProcessor.Shutdown","00AB","11.04.2021 18:10:25","0","Processor positioning#0$0 shutting down.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","SingleThreadedProcessorsContainer.ShutdownProcessing","00AC","11.04.2021 18:10:25","0","Stopping processor outputStep-output#0$0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","SingleThreadedProcessorsContainer.ShutdownProcessing","00AD","11.04.2021 18:10:25","0","Stopping processor outputStep#0$0","1.2.1105.1"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","ResourceUtilization","","11","1.2.1105.1","",""
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","InputEvents","","10","1.2.1105.1","positioning","0"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","InputEventBytes","","2004","1.2.1105.1","positioning","0"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","LateInputEvents","","0","1.2.1105.1","positioning","0"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","OutputEvents","","10","1.2.1105.1","output","0"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","ConversionErrors","","0","1.2.1105.1","positioning","0"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","ConversionErrors","","0","1.2.1105.1","output","0"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","Errors","","0","1.2.1105.1","",""
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","DroppedOrAdjustedEvents","","0","1.2.1105.1","outputStep",""
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","DeserializationError","","0","1.2.1105.1","positioning","0"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","EarlyInputEvents","","0","1.2.1105.1","positioning","0"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","InputEventsSourcesBacklogged","","0","1.2.1105.1","positioning","0"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","InputEventsSourcesPerSecond","","2","1.2.1105.1","positioning","0"
+11.04.2021 18:10:25,MonitoringEventSource,4002,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"2021-04-11T18:10:25.6946729Z","streamingNode0","","/subscriptions//resourceGroups//providers/Microsoft.StreamAnalytics/streamingjobs/","","OutputWatermarkDelaySeconds","","0","1.2.1105.1","output","0"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","InputProcessor.Dispose","00AE","11.04.2021 18:10:25","0","Disposing input processor positioning#0$0","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","InputPartitionController.Dispose","00AF","11.04.2021 18:10:25","0","Disposing Partition Controller","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","InputPartitionController.Dispose","00B0","11.04.2021 18:10:25","0","Disposing InputPartitionController. Anchor of last produced message - ResourceId: c:\Users\tkus\Desktop\Mgr\positioning-stream-processing\data-processing\azure\positioning-data-test\Inputs\positioning-mock.json ArrivalTime : 2021-04-11T18:10:24.1245559Z","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","InputPartitionController.Dispose","00B1","11.04.2021 18:10:25","0","Disposing InputPartitionController. Anchor of last consumed message - ResourceId: c:\Users\tkus\Desktop\Mgr\positioning-stream-processing\data-processing\azure\positioning-data-test\Inputs\positioning-mock.json ArrivalTime : 9997-04-05T23:59:59.9999999Z","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","InputPartitionController.Dispose","00B2","11.04.2021 18:10:25","0","Cancelling CancellationToken cts","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","InputPartitionController.Dispose","00B3","11.04.2021 18:10:25","0","Disposing buffer","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","InputPartitionController.Dispose","00B4","11.04.2021 18:10:25","0","Disposing CancellationToken cts","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","InputPartitionController.Dispose","00B5","11.04.2021 18:10:25","0","Disposing CancellationToken linkedCancellationTokenSource","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","InputPartitionController.Dispose","00B6","11.04.2021 18:10:25","0","Disposing adapter","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","InputAdapterBase.Dispose","00B7","11.04.2021 18:10:25","0","Disposed input adapter.","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","DataErrorCollector.Dispose","00B8","11.04.2021 18:10:25","0","Disposed dataErrorCollector","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","DataErrorCollector.Dispose","00B9","11.04.2021 18:10:25","0","Disposed dataErrorCollector","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","MetricsCollector.DeregisterMetrics","00BA","11.04.2021 18:10:25","0","Deregister from metrics collector metrics:
+Name=InputAdapterGetBatchRequestsPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsInBytesPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputAdapterGetBatchRequestsTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsInBytesTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=StreamingProcessorWatermark, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsDegradedPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=ProcessingRatePerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsDegradedTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=OutputRatePerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsEarlyPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=ActualProcessingRatePerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsEarlyTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsLatePerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsLateTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsSerializerErrorsPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsSerializerErrorsTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsLastArrivalTime, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=UserActionableErrorsPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=, QueryStepId=, OperatorId=
+Name=InputEventsSourcesPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsLastPunctuationTime, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=UserActionableErrorsTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=, QueryStepId=, OperatorId=
+Name=StreamingProcessorInitializeInvocations, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=, QueryStepId=, OperatorId=
+Name=InputEventsSourcesTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsBatchStringCacheSize, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=StreamingProcessorProcessInvocations, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=, QueryStepId=, OperatorId=
+Name=InputEventsSourcesBacklogged, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsSourcesIngestedPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=InputEventsTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=positioning#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Deregister from MultidimensionalMetrics:
+","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","MultiAdapterPartitionController.CleanUpRegistry","00BB","11.04.2021 18:10:25","0","Cleaning up registry. Dispose = True","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","DataErrorCollector.Dispose","00BC","11.04.2021 18:10:25","0","Disposed dataErrorCollector","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","MultiAdapterPartitionController.CleanUpRegistry","00BD","11.04.2021 18:10:25","0","Cleaned up 1 Time partitions and disposed 1 adapters. LowWatermarkTicks: 3154514975999999999","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","MultiAdapterPartitionController.CleanUpRegistry","00BE","11.04.2021 18:10:25","0","Exiting CleanUpRegistry. Remaining Time partitions: 1","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","BasePartitionController.Dispose","00BF","11.04.2021 18:10:25","0","Dispose MultiAdapterPartitionController","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","MetricsCollector.DeregisterMetrics","00C0","11.04.2021 18:10:25","0","Deregister from metrics collector metrics:
+Name=OutputEventsSerializerErrorsPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=OutputEventsSerializerErrorsTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=StreamingProcessorProcessBatchLatency, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=, QueryStepId=output, OperatorId=
+Name=OutputPartitionKeyCardinalityTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=OutputThrottleTimeSecondsPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=StreamingProcessorInitializeInvocations, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=, QueryStepId=output, OperatorId=
+Name=OutputThrottleCountPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=StreamingProcessorProcessInvocations, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=, QueryStepId=output, OperatorId=
+Name=OutputThrottledCountTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=OutputLastProcessedTime, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=OutputLastPunctuationTime, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=StreamingProcessorWatermark, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=, QueryStepId=output, OperatorId=
+Name=OutputEventsPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Name=OutputEventsTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep-output#0$0, PartitionId=0, QueryStepId=, OperatorId=
+Deregister from MultidimensionalMetrics:
+","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","","","11.04.2021 18:10:25","0","Disposing Buffer..","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","","","11.04.2021 18:10:25","0","Buffer Disposed","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","DataErrorCollector.Dispose","00C1","11.04.2021 18:10:25","0","Disposed dataErrorCollector","1.2.1105.1"
+11.04.2021 18:10:25,FxVerbose,1,Verbose,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","MetricsCollector.DeregisterMetrics","00C2","11.04.2021 18:10:25","0","Deregister from metrics collector metrics:
+Name=StreamingProcessorCatchUpState, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=
+Name=StreamingProcessorBatchProcessingTimeMs, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=
+Name=QueryDroppedOrAdjustedEventsPerSecond, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=
+Name=StreamingProcessorInitializeInvocations, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=
+Name=QueryDroppedOrAdjustedEventsTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=
+Name=QueryEventsReadTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=Op_2
+Name=StreamingProcessorProcessInvocations, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=
+Name=EventsInQueryState, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=
+Name=StreamingProcessorCatchingUpWatermarkDelay, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=
+Name=QueryLastProcessedTime, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=positioning_1
+Name=StreamingProcessorWatermark, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=
+Name=QueryLastPunctuationTime, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=positioning_1
+Name=QueryEventsReadTotal, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=positioning_1
+Name=QueryLastProcessedTime, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=Op_2
+Name=StreamingProcessorProcessBatchLatency, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=
+Name=QueryLastPunctuationTime, JobId=f95dedcd-e89e-4e90-af94-1826903e88e5, ProcessorId=outputStep#0$0, PartitionId=, QueryStepId=outputStep, OperatorId=Op_2
+Deregister from MultidimensionalMetrics:
+","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorsContainer.Dispose","00C3","11.04.2021 18:10:25","0","Processors in ProcessorsContainer disposed.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","ProcessorsContainer.Dispose","00C4","11.04.2021 18:10:25","0","PersistencyManagers in ProcessorsContainer disposed.","1.2.1105.1"
+11.04.2021 18:10:25,FxInfo,1,Informational,f95dedcd-e89e-4e90-af94-1826903e88e5,"streamingNode0","StreamingNode.Dispose","00C5","11.04.2021 18:10:25","0","NodeManager disposed","1.2.1105.1"

@@ -1,0 +1,53 @@
+﻿{
+  "nodes": [
+    {
+      "id": "positioning_0",
+      "name": "positioning",
+      "type": "Input",
+      "processorId": "positioning#0$0",
+      "dataSourceType": "InputFile",
+      "partitionIds": [
+        0
+      ]
+    },
+    {
+      "id": "outputStep_outputStep_0",
+      "name": "outputStep",
+      "type": "Step",
+      "processorId": "outputStep#0$0",
+      "partitionIds": [
+        0
+      ],
+      "scriptPosition": {
+        "startLine": 22,
+        "startColumn": 1,
+        "startOffset": 369,
+        "endLine": 27,
+        "endColumn": 15,
+        "endOffset": 437
+      },
+      "inputTimeShift": "00:00:00"
+    },
+    {
+      "id": "outputStep-output_0",
+      "name": "output",
+      "type": "Output",
+      "processorId": "outputStep-output#0$0",
+      "dataSourceType": "LocalOutput",
+      "partitionIds": [
+        0
+      ],
+      "inputTimeShift": "00:05:00"
+    }
+  ],
+  "edges": [
+    {
+      "source": "positioning_0",
+      "target": "outputStep_outputStep_0"
+    },
+    {
+      "source": "outputStep_outputStep_0",
+      "target": "outputStep-output_0"
+    }
+  ]
+}

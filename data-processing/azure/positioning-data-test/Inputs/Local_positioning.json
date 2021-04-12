@@ -1,0 +1,7 @@
+{
+    "InputAlias": "positioning",
+    "Type": "Data Stream",
+    "Format": "Json",
+    "FilePath": "positioning-mock.json",
+    "ScriptType": "InputMock"
+}

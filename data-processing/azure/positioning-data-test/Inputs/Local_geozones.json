@@ -1,0 +1,7 @@
+{
+    "InputAlias": "geozones",
+    "Type": "Reference data",
+    "Format": "Json",
+    "FilePath": "../../../../static-data/geozones/zones.json",
+    "ScriptType": "InputMock"
+}

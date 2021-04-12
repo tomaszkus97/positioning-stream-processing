@@ -1,0 +1,89 @@
+﻿{
+  "nodes": [
+    {
+      "id": "positioning_0",
+      "name": "positioning",
+      "type": "Input",
+      "processorId": "positioning#0$0",
+      "dataSourceType": "InputFile",
+      "partitionIds": [
+        0
+      ]
+    },
+    {
+      "id": "geozones_0",
+      "name": "geozones",
+      "type": "ReferenceData",
+      "processorId": "geozones#0$0",
+      "dataSourceType": "ReferenceFile",
+      "partitionIds": [
+        0
+      ]
+    },
+    {
+      "id": "outputStep_iswithin_0",
+      "name": "iswithin",
+      "type": "Step",
+      "processorId": "outputStep#0$0",
+      "partitionIds": [
+        0
+      ],
+      "scriptPosition": {
+        "startLine": 2,
+        "startColumn": 6,
+        "startOffset": 7,
+        "endLine": 9,
+        "endColumn": 1,
+        "endOffset": 184
+      },
+      "inputTimeShift": "00:01:00"
+    },
+    {
+      "id": "outputStep_outputStep_0",
+      "name": "outputStep",
+      "type": "Step",
+      "processorId": "outputStep#0$0",
+      "partitionIds": [
+        0
+      ],
+      "scriptPosition": {
+        "startLine": 11,
+        "startColumn": 1,
+        "startOffset": 189,
+        "endLine": 18,
+        "endColumn": 30,
+        "endOffset": 356
+      },
+      "inputTimeShift": "00:01:00"
+    },
+    {
+      "id": "outputStep-output_0",
+      "name": "output",
+      "type": "Output",
+      "processorId": "outputStep-output#0$0",
+      "dataSourceType": "LocalOutput",
+      "partitionIds": [
+        0
+      ],
+      "inputTimeShift": "00:06:00"
+    }
+  ],
+  "edges": [
+    {
+      "source": "positioning_0",
+      "target": "outputStep_iswithin_0"
+    },
+    {
+      "source": "geozones_0",
+      "target": "outputStep_iswithin_0"
+    },
+    {
+      "source": "outputStep_iswithin_0",
+      "target": "outputStep_outputStep_0"
+    },
+    {
+      "source": "outputStep_outputStep_0",
+      "target": "outputStep-output_0"
+    }
+  ]
+}

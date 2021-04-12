@@ -15,11 +15,11 @@ namespace AblyCloudAdapter
 
             var streamClient = new MQTTStreamClient();
             var azureEmitter = new AzureEventEmitter();
-            var googleEmitter = new GoogleCloudEventEmitter();
+            //var googleEmitter = new GoogleCloudEventEmitter();
 
-            await googleEmitter.Initialize();
+            //await googleEmitter.Initialize();
 
-            streamClient.InitializeConnection(settings.StreamConnection, googleEmitter.SendMessage);
+            streamClient.InitializeConnection(settings.StreamConnection, azureEmitter.SendMessage);
 
             Console.ReadLine();
         }

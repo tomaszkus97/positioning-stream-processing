@@ -1,34 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomi8\\Desktop\\stream_processing\\ably_adapter\\AblyCloudAdapter\\AblyCloudAdapter\\AblyCloudAdapter.csproj": {}
+    "C:\\Users\\tkus\\Desktop\\Mgr\\positioning-stream-processing\\cloud-adapter\\AblyCloudAdapter\\AblyCloudAdapter\\AblyCloudAdapter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomi8\\Desktop\\stream_processing\\ably_adapter\\AblyCloudAdapter\\AblyCloudAdapter\\AblyCloudAdapter.csproj": {
+    "C:\\Users\\tkus\\Desktop\\Mgr\\positioning-stream-processing\\cloud-adapter\\AblyCloudAdapter\\AblyCloudAdapter\\AblyCloudAdapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomi8\\Desktop\\stream_processing\\ably_adapter\\AblyCloudAdapter\\AblyCloudAdapter\\AblyCloudAdapter.csproj",
+        "projectUniqueName": "C:\\Users\\tkus\\Desktop\\Mgr\\positioning-stream-processing\\cloud-adapter\\AblyCloudAdapter\\AblyCloudAdapter\\AblyCloudAdapter.csproj",
         "projectName": "AblyCloudAdapter",
-        "projectPath": "C:\\Users\\tomi8\\Desktop\\stream_processing\\ably_adapter\\AblyCloudAdapter\\AblyCloudAdapter\\AblyCloudAdapter.csproj",
-        "packagesPath": "C:\\Users\\tomi8\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomi8\\Desktop\\stream_processing\\ably_adapter\\AblyCloudAdapter\\AblyCloudAdapter\\obj\\",
+        "projectPath": "C:\\Users\\tkus\\Desktop\\Mgr\\positioning-stream-processing\\cloud-adapter\\AblyCloudAdapter\\AblyCloudAdapter\\AblyCloudAdapter.csproj",
+        "packagesPath": "C:\\Users\\tkus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tkus\\Desktop\\Mgr\\positioning-stream-processing\\cloud-adapter\\AblyCloudAdapter\\AblyCloudAdapter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tomi8\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tkus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,7 +40,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Azure.Messaging.EventHubs": {
               "target": "Package",
@@ -86,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

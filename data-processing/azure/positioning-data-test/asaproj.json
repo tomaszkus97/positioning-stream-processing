@@ -1,0 +1,26 @@
+{
+    "name": "positioning-data-test",
+    "startFile": "traffic.asaql",
+    "configurations": [
+        {
+            "filePath": "JobConfig.json",
+            "subType": "JobConfig"
+        },
+        {
+            "filePath": "Inputs/geozones.json",
+            "subType": "Input"
+        },
+        {
+            "filePath": "Inputs/positioning-data.json",
+            "subType": "Input"
+        },
+        {
+            "filePath": "Inputs/Local_positioning.json",
+            "subType": "InputMock"
+        },
+        {
+            "filePath": "Inputs/Local_geozones.json",
+            "subType": "InputMock"
+        }
+    ]
+}

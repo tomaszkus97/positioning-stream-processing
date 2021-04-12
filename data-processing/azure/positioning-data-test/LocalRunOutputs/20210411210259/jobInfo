@@ -1,0 +1,11 @@
+﻿{
+  "id": "9e843c8e-2220-48b8-a614-553ea3502e49",
+  "port": 20564,
+  "inputs": [
+    "positioning",
+    "geozones"
+  ],
+  "outputs": [
+    "output"
+  ]
+}

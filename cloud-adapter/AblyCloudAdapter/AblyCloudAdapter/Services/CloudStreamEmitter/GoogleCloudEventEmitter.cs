@@ -1,4 +1,5 @@
-﻿using Google.Apis.Auth.OAuth2;
+﻿using AblyCloudAdapter.Contracts;
+using Google.Apis.Auth.OAuth2;
 using Google.Cloud.PubSub.V1;
 using Google.Protobuf;
 using Grpc.Core;
@@ -26,17 +27,16 @@ namespace AblyCloudAdapter.Services.CloudStreamEmitter
             _client = await PublisherClient.CreateAsync(topicName);
         }
 
-        public async Task SendMessage(byte[] message)
+        public async Task SendMessage(VehiclePositionEvent message)
         {
-            var stringMessage = System.Text.Encoding.UTF8.GetString(message);
+            var messageJson = JsonConvert.SerializeObject(message);
+            
             var pubsubMessage = new PubsubMessage()
             {
-                Data = ByteString.CopyFromUtf8(stringMessage)
+                Data = ByteString.CopyFromUtf8(messageJson)
             };
 
-            Console.WriteLine(stringMessage);
-
-            //await _client.PublishAsync(pubsubMessage);
+            await _client.PublishAsync(pubsubMessage);
         }
     }
 }

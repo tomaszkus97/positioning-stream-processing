@@ -1,0 +1,27 @@
+
+/*
+WITH IsWithin AS (
+SELECT
+    G.name, P.VehicleNumber, ST_WITHIN(CreatePoint(P.Latitude, P.Longitude), G.geometry) AS Within
+FROM
+    positioning P
+CROSS JOIN 
+    geozones G
+)
+
+SELECT
+    System.TIMESTAMP() AS Time, name, COUNT( DISTINCT VehicleNumber)
+FROM 
+    IsWithin
+WHERE Within = 1
+GROUP BY
+    name,
+    TumblingWindow(second, 60)
+*/
+
+SELECT
+    P.Delay
+FROM
+    positioning P
+WHERE 
+    P.Delay > 0

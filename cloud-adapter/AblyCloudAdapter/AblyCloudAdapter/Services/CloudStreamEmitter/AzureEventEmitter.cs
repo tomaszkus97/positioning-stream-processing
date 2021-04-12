@@ -1,4 +1,5 @@
-﻿using Azure.Messaging.EventHubs;
+﻿using AblyCloudAdapter.Contracts;
+using Azure.Messaging.EventHubs;
 using Azure.Messaging.EventHubs.Producer;
 using Newtonsoft.Json;
 using System;
@@ -18,7 +19,7 @@ namespace AblyCloudAdapter.Services.CloudStreamEmitter
             _client = new EventHubProducerClient(connectionString, eventHubName);
         }
 
-        public async Task SendMessage(byte[] message)
+        public async Task SendMessage(VehiclePositionEvent message)
         {
             var messageJson = JsonConvert.SerializeObject(message);
 
@@ -26,7 +27,7 @@ namespace AblyCloudAdapter.Services.CloudStreamEmitter
 
             eventBatch.TryAdd(new EventData(Encoding.UTF8.GetBytes(messageJson)));
 
-            Console.WriteLine("Sending message");
+            Console.WriteLine($"Sending message {messageJson}");
 
             //await _client.SendAsync(eventBatch);
         }

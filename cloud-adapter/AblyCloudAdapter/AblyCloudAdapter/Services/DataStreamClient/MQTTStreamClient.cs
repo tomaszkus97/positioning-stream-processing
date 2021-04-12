@@ -1,6 +1,8 @@
-﻿using MQTTnet;
+﻿using AblyCloudAdapter.Contracts;
+using MQTTnet;
 using MQTTnet.Client;
 using MQTTnet.Client.Options;
+using Newtonsoft.Json;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace AblyCloudAdapter.Services.DataStreamClient
             _client = factory.CreateMqttClient();
         }
 
-        public async void InitializeConnection(StreamConnectionSettings settings, Func<byte[], Task> messageReceivedCallback)
+        public async void InitializeConnection(StreamConnectionSettings settings, Func<VehiclePositionEvent, Task> messageReceivedCallback)
         {
             var options = new MqttClientOptionsBuilder()
                 .WithWebSocketServer(settings.ServerAddress)
@@ -32,8 +34,14 @@ namespace AblyCloudAdapter.Services.DataStreamClient
 
             _client.UseApplicationMessageReceivedHandler(async eventArgs =>
             {
-                Console.WriteLine($"Message received: {eventArgs.ApplicationMessage.Topic}" );
-                await messageReceivedCallback(eventArgs.ApplicationMessage.Payload);
+                var stringMessage = System.Text.Encoding.UTF8.GetString(eventArgs.ApplicationMessage.Payload);
+                var eventObject = JsonConvert.DeserializeObject<MQTTInputData>(stringMessage);
+                if(eventObject.Event != null)
+                {
+                    var message = new VehiclePositionEvent(eventObject.Event);
+                    Console.WriteLine($"Message received: {eventArgs.ApplicationMessage.Topic}");
+                    await messageReceivedCallback(message);
+                }
             });
 
             await _client.ConnectAsync(options, CancellationToken.None);
