@@ -1,0 +1,12 @@
+{
+    "Name": "getTimeOfDay",
+    "Type": "Scalar",
+    "ScriptType": "JSFunction",
+    "FunctionInputs": [
+        {
+            "dataType": "any",
+            "isConfigurationParameter": null
+        }
+    ],
+    "OutputType": "any"
+}

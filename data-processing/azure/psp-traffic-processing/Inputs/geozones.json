@@ -1,0 +1,23 @@
+{
+    "Name": "geozones",
+    "Type": "Reference data",
+    "DataSourceType": "Blob Storage",
+    "BlobReferenceProperties": {
+        "StorageAccounts": [
+            {
+                "AccountName": "positioning",
+                "AccountKey": null
+            }
+        ],
+        "Container": "geozones",
+        "PathPattern": "zones",
+        "DateFormat": "yyyy/MM/dd",
+        "TimeFormat": "HH"
+    },
+    "DataSourceCredentialDomain": "b057c2d8-e26b-46e4-8dd7-1f4768144aa7.StreamAnalystics",
+    "Serialization": {
+        "Type": "Json",
+        "Encoding": "UTF8"
+    },
+    "ScriptType": "Input"
+}

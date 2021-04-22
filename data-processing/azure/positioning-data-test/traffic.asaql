@@ -1,27 +1,17 @@
 
-/*
-WITH IsWithin AS (
 SELECT
-    G.name, P.VehicleNumber, ST_WITHIN(CreatePoint(P.Latitude, P.Longitude), G.geometry) AS Within
+     P.Timestamp, UDF.getTimeOfDay(P.TimeStamp) as DayTime, P.RouteNumber, AVG(P.Delay) AS Delay
 FROM
     positioning P
-CROSS JOIN 
-    geozones G
-)
-
-SELECT
-    System.TIMESTAMP() AS Time, name, COUNT( DISTINCT VehicleNumber)
-FROM 
-    IsWithin
-WHERE Within = 1
 GROUP BY
-    name,
+    P.TimeStamp,
+    Daytime,
     TumblingWindow(second, 60)
-*/
 
 SELECT
-    P.Delay
+    P.Timestamp, P.VehicleNumber, P.RouteNumber, P.LineNumber
 FROM
     positioning P
-WHERE 
+WHERE
     P.Delay > 0
+

@@ -1,0 +1,51 @@
+WITH 
+IsWithin AS(
+SELECT 
+    G.name,
+    P.VehicleNumber,
+    P.TimeStamp,
+    P.Speed,
+    P.Delay,
+    ST_WITHIN(CreatePoint(P.Latitude, P.Longitude), G.geometry) AS Within 
+FROM 
+    [positioning-events] P 
+    CROSS JOIN 
+    geozones G 
+), 
+Traffic AS(
+SELECT 
+    TimeStamp,
+    name AS ZoneName,
+    UDF.getTrafficCoeff(AVG(Speed), AVG(Delay)) AS TrafficCoeff 
+FROM 
+    IsWithin 
+WHERE 
+    Within = 1 
+GROUP BY 
+    TimeStamp,
+    name,
+    TumblingWindow(second, 60) 
+HAVING TrafficCoeff > = 0 
+) 
+
+SELECT 
+    System.TIMESTAMP() AS WindowStartTime,
+    UDF.getTimeOfDay(System.TIMESTAMP()),
+    name AS ZoneName,
+    COUNT(DISTINCT VehicleNumber) AS NumberOfVehicles INTO [database] 
+FROM 
+    IsWithin 
+WHERE 
+    Within = 1 
+GROUP BY 
+    name,
+    TumblingWindow(second, 10) 
+
+
+SELECT 
+    *
+FROM 
+    Traffic
+WHERE
+    IsFirst(second, 60) OVER (PARTITION BY ZoneName) = 1
+

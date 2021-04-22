@@ -1,7 +1,11 @@
 {
-    "name": "positioning-data-test",
-    "startFile": "traffic.asaql",
+    "name": "psp-traffic-processing",
+    "startFile": "Transformation.asaql",
     "configurations": [
+        {
+            "filePath": "Functions/getTimeOfDay.js.json",
+            "subType": "JSFunction"
+        },
         {
             "filePath": "JobConfig.json",
             "subType": "JobConfig"
@@ -11,20 +15,20 @@
             "subType": "Input"
         },
         {
-            "filePath": "Inputs/positioning-data.json",
+            "filePath": "Outputs/database.json",
+            "subType": "Output"
+        },
+        {
+            "filePath": "Inputs/positioning-events.json",
             "subType": "Input"
         },
         {
-            "filePath": "Inputs/Local_positioning.json",
+            "filePath": "Inputs/Local_positioning-events.json",
             "subType": "InputMock"
         },
         {
             "filePath": "Inputs/Local_geozones.json",
             "subType": "InputMock"
-        },
-        {
-            "filePath": "Functions/getTimeOfDay.js.json",
-            "subType": "JSFunction"
         },
         {
             "filePath": "Functions/getTrafficCoeff.js.json",

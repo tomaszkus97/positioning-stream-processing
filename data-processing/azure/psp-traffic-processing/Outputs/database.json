@@ -1,0 +1,13 @@
+{
+    "Name": "database",
+    "DataSourceType": "DocumentDB",
+    "DocumentDbProperties": {
+        "AccountId": "positioning-data",
+        "AccountKey": null,
+        "Database": "traffic",
+        "ContainerName": "traffic-1",
+        "DocumentId": null
+    },
+    "DataSourceCredentialDomain": "e8279baa-525b-460c-a166-c6016990aaa3.StreamAnalystics",
+    "ScriptType": "Output"
+}

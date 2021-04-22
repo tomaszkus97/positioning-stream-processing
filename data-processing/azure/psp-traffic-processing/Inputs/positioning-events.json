@@ -1,0 +1,21 @@
+{
+    "Name": "positioning-events",
+    "Type": "Data Stream",
+    "DataSourceType": "Event Hub",
+    "EventHubProperties": {
+        "ServiceBusNamespace": "positioning-data-hub",
+        "EventHubName": "positioning-data",
+        "SharedAccessPolicyName": "positioning-data-test_positioning-data_policy",
+        "SharedAccessPolicyKey": null,
+        "ConsumerGroupName": "",
+        "AuthenticationMode": "ConnectionString"
+    },
+    "DataSourceCredentialDomain": "22e4514a-95f7-4d39-b02c-165746d9652c.StreamAnalystics",
+    "Serialization": {
+        "Type": "Json",
+        "Encoding": "UTF8"
+    },
+    "PartitionKey": null,
+    "CompressionType": "None",
+    "ScriptType": "Input"
+}

@@ -38,5 +38,15 @@ namespace AblyCloudAdapter.Services.CloudStreamEmitter
 
             await _client.PublishAsync(pubsubMessage);
         }
+
+        public Task SendARSMessage(VehicleArriveEvent message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SendVPMessage(VehiclePositionEvent message)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

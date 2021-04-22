@@ -1,15 +1,11 @@
 {
 	"folders": [
 		{
-			"path": ".."
-		},
-		{
-			"name": "positioning-data-processing",
-			"path": "..\\positioning-data-processing"
-		},
-		{
-			"name": "positioning-data-test",
 			"path": "."
+		},
+		{
+			"name": "psp-traffic-processing",
+			"path": "..\\psp-traffic-processing"
 		}
 	],
 	"settings": {}

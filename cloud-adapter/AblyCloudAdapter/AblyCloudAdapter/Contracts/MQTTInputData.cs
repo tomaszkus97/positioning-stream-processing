@@ -27,11 +27,24 @@ namespace AblyCloudAdapter.Contracts
         public int Occupancy { get; set; }
         [JsonProperty("dl")]
         public double Delay { get; set; }
+        [JsonProperty("stop")]
+        public string Stop { get; set; }
     }
 
-    public class MQTTInputData
+    public class MQTTEvent
+    {
+
+    }
+
+    public class ARSEvent: MQTTEvent
     {
         [JsonProperty("ARS")]
+        public VehiclePositionRawEvent Event { get; set; }
+    }
+
+    public class VPEvent: MQTTEvent
+    {
+        [JsonProperty("VP")]
         public VehiclePositionRawEvent Event { get; set; }
     }
 }

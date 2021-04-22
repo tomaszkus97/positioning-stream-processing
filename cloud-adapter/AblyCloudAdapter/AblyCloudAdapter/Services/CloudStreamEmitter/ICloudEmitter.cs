@@ -5,6 +5,7 @@ namespace AblyCloudAdapter.Services.CloudStreamEmitter
 {
     public interface ICloudEmitter
     {
-        Task SendMessage(VehiclePositionEvent message);
+        Task SendARSMessage(VehicleArriveEvent message);
+        Task SendVPMessage(VehiclePositionEvent message);
     }
 }

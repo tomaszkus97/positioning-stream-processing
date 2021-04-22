@@ -19,7 +19,7 @@ namespace AblyCloudAdapter
 
             //await googleEmitter.Initialize();
 
-            streamClient.InitializeConnection(settings.StreamConnection, azureEmitter.SendMessage);
+            streamClient.InitializeConnection(settings.StreamConnection, azureEmitter.SendARSMessage, azureEmitter.SendVPMessage);
 
             Console.ReadLine();
         }

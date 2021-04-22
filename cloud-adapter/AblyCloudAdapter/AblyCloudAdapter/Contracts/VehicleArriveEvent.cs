@@ -4,9 +4,9 @@ using System.Text;
 
 namespace AblyCloudAdapter.Contracts
 {
-    class VehicleArriveEvent
+    public class VehicleArriveEvent
     {
-        public VehicleArriveEvent(VehiclePositionRawEvent raw)
+        public VehicleArriveEvent(VehiclePositionRawEvent raw, string nextStop, int routeDirection)
         {
             VehicleNumber = raw.VehicleNumber;
             TimeStamp = raw.TimeStamp;
@@ -16,6 +16,8 @@ namespace AblyCloudAdapter.Contracts
             RouteNumber = raw.RouteNumber;
             Occupancy = raw.Occupancy;
             Delay = raw.Delay;
+            NextStop = nextStop;
+            RouteDirection = routeDirection;
         }
 
         public int VehicleNumber { get; set; }
@@ -26,5 +28,7 @@ namespace AblyCloudAdapter.Contracts
         public string RouteNumber { get; set; }
         public int Occupancy { get; set; }
         public double Delay { get; set; }
+        public string NextStop { get; set; }
+        public int RouteDirection { get; set; }
     }
 }
