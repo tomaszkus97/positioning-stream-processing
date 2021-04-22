@@ -14,8 +14,8 @@ export interface ArrivalEvent {
 export interface RoutingResponse {
   stop: {
     name: string;
-    stopTimesForPattern:{
+    stopTimesForPattern: [{
       scheduledArrival: number
-    }
+    }]
   }
 }

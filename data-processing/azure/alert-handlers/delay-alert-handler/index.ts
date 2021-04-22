@@ -1,14 +1,15 @@
 import { AzureFunction, Context, HttpRequest } from "@azure/functions"
 import { ArrivalEvent} from './contracts';
 import { getStopDetails } from "./routing-api-client";
+import { getPredictedArrivalTime } from "./timingFunctions";
 
 const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
     const event: ArrivalEvent = req.body;
-    context.log('HTTP trigger function processed a request.', event);
-    
-    const response = await getStopDetails(event.NextStop, event.RouteNumber, event.RouteDirection);
+    const nextStop = await getStopDetails(event.NextStop, event.RouteNumber, event.RouteDirection);
 
-    context.log(JSON.stringify(response));
+    const scheduledArrival = nextStop.stop.stopTimesForPattern[0]?.scheduledArrival;
+
+    context.log(getPredictedArrivalTime(scheduledArrival, event.Delay));
 
     context.res = {
         status: 200, /* Defaults to 200 */

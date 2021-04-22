@@ -32,7 +32,7 @@ namespace AblyCloudAdapter.Services.CloudStreamEmitter
 
             Console.WriteLine($"Sending ARS message {messageJson}");
 
-            //await _arrivalClient.SendAsync(eventBatch);
+            await _arrivalClient.SendAsync(eventBatch);
         }
 
         public async Task SendVPMessage(VehiclePositionEvent message)
@@ -45,7 +45,7 @@ namespace AblyCloudAdapter.Services.CloudStreamEmitter
 
             Console.WriteLine($"Sending VP message {messageJson}");
 
-            //await _positioningClient.SendAsync(eventBatch);
+            await _positioningClient.SendAsync(eventBatch);
         }
 
 
